@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding:0;
+    background-color: rgba(29, 70, 50, 0.65);
+    font-family: Maryweather, sans-serif;
+    color: white;   
+}
+
+header {
+   margin-top: clamp(3.5rem, 2.5vh, 7rem);
+    text-align: center;
+    color: pink;
+}
+
+h1 {
+    font-weight: 500;
+    line-height: 0.9;
+    font-size: 2rem;
+    margin-bottom: 0.9rem;
+}
+
+#description {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.;
+     margin-bottom: 5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 2.9rem;
+}
+#form-container {
+    background-color: rgb(128, 150, 125);
+    border-radius: 0.9rem;
+    min-height: 70vh; 
+    position: relative; 
+    top: 10; 
+    left: 0;
+    transform: none; 
+    width: 100%; 
+    max-width: clamp(650px, 25%, 18rem); 
+    margin: auto; 
+    padding: .5rem 1rem 1.9rem 1rem;
+  
+}
+label, fieldset {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.9rem;
+}
+
+#name-label, #email-label, #number-label {
+    font-size: 1.5rem;
+    margin-top: 2.8rem;
+   padding-left: 20px; 
+}
+
+input {
+    height: 1.89rem;
+    min-width: clamp(300px, 20%, 5rem);
+    border: none;
+    outline: none;
+    margin-left: 30px;
+}
+
+#number {
+    min-width: clamp(20px, 20%, 4rem);
+}
+
+#form-dropdown {
+    margin-top: 2.8rem;
+    font-size: 1.3rem;
+      padding-left: 21px; 
+}
+
+#dropdown {
+    margin-top: -30px;
+    height: 1.5rem;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    font-size: 1.1rem;
+    margin-left: 10px;  
+    padding-left: 25px; 
+}
+
+fieldset {
+      margin-top: 2.8rem;
+    border: none;
+    min-width: clamp(500px, 20%, 2rem);
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
+
+fieldset input[type="radio"] {
+    transform: scale(0.5);
+    margin: 0.7rem 0.2rem 0.7rem -7.6rem;
+    font-size: 1.1rem;
+    
+}
+
+label[for="beginner"],
+label[for="novice"],
+label[for="expert"] {
+    font-size: 1.2rem;
+    margin: 0.2rem 0 0 0.5rem;
+}
+
+label[for="HTML"],
+label[for="Java"],
+label[for="PHP"],
+label[for="C++"],
+label[for="Other"] {
+    font-size: 1.3rem;
+    margin: 0.2rem 0 0 0.5rem;
+}
+
+fieldset input[type="checkbox"] {
+    transform: scale(0.6);
+    margin: 0.2rem 0.2rem 0.2rem 0.5rem;
+    font-size: 1.1rem;
+     min-width: 1.5rem;
+}
+
+#code-languages {
+ margin-top: 2.8rem;
+    display: flex;
+    flex-wrap:wrap;
+    gap: 0.9rem;
+    align-items: center;
+}
+label[for="other"] {
+    margin-top: 25px; 
+}
+#other{
+    margin-top: 22px;
+    }
+#comments {
+    margin-top: 0.5rem;
+     border: none;
+    outline: none;
+    height: 6rem;
+    width: 90%;
+    transform: translate(6%, 3%);
+      
+}
+label[for="comments"] {
+    font-size: 1.5rem; 
+     margin-top: 2.8rem;
+}
+
+#button {
+    text-align: center;
+     margin-top: 1rem;
+}
+.submit-button {
+    background-color: pink;
+    color: rgb(128, 150, 125);
+     border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: rgba(29, 184, 137, 0.7);
+}
