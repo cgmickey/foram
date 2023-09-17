@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for stopping by</p>
+  </header>
+  <form id="survey-form">
+    <div id="form-container">
+      <label id="name-label" for="name">Name</label>
+      <input id="name" type="text" name="name" placeholder="Enter Your Name" required>
+
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" name="email" placeholder="Enter Your Email" required>
+
+      <label id="number-label" for="number">Age</label>
+      <input id="number" type="number" name="age" placeholder="Age" min="13" max="112">
+            
+      <div id="form-dropdown">
+        <p>Are you a Student?</p>
+        <select id="dropdown" name="student">
+           <option value="#"></option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>      
+      <fieldset>
+        <legend>Select your level of experience with coding:</legend>
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="beginner" name="experience" value="beginner">
+        <label for="novice">Novice</label>
+        <input type="radio" id="novice" name="experience" value="novice">
+        <label for="expert">Expert</label>
+        <input type="radio" id="expert" name="experience" value="expert">
+      </fieldset>
+      <fieldset id="code-languages"> 
+        <legend>What code language are you interested in?</legend>
+        <label for="HTML">HTML</label>
+        <input type="checkbox" id="HTML" name="languages" value="HTML">
+        <label for="Java">Java</label>
+        <input type="checkbox" id="Java" name="languages" value="Java">
+        <label for="PHP">PHP</label>
+        <input type="checkbox" id="PHP" name="languages" value="PHP">
+        <label for="C++">C++</label>
+        <input type="checkbox" id="C++" name="languages" value="C++">
+        <label for="other">Other</label>
+        <input type="checkbox" id="other" name="languages" value="Other">
+      </fieldset>
+      <div id="additional-comments" name="additional-comments">
+        <label for="comments">Any additional comments:</label>
+        <textarea id="comments" name="additional-comments" rows="8" cols="50"></textarea>
+      </div>
+      <div id="button">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
